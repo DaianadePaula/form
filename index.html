@@ -5,98 +5,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200&display=swap"
+        rel="stylesheet">
 
-    <title>Formulário</title>
+    <title>Form</title>
 </head>
 
 <body>
 
-    <fieldset>
+    <div class="field">
 
-        <legend>Cadastro</legend>
+        <h3>Cadastro</h3>
 
         <form action="" method="post" enctype="multipart/form-data">
 
             <div>
-                <label>Nome:<br>
-                    <input type="text" name="nome" id="nome" required>
+                <label>Nome:
+                    <input class="input-block" type="text" name="nome" id="nome" required>
                 </label>
-                <br><br>
 
-                <label>Email:<br>
-                    <input type="email" name="email" id="email" required>
+
+                <label>Email:
+                    <input class="input-block" type="email" name="email" id="email" required>
                 </label>
-                <br><br>
 
-                <label>Idade:<br>
-                    <input type="number" name="idade" min="12" id="idade" step="1">
+
+                <label>Idade:
+                    <input class="input-block" type="number" name="idade" min="12" id="idade" step="1">
                 </label>
-                <br><br>
 
-                <label>Data de Nascimento:<br>
-                    <input type="date" name="data-de-nascimento" id="data-de-nascimento" required>
+
+                <label>Data de Nascimento:
+                    <input class="input-block" type="date" name="data-de-nascimento" id="data-de-nascimento" required>
                 </label>
             </div>
-            <br>
+
 
             <div>
-                <label>Onde você possui conta:<br>
-                    <label>
-                        <input type="checkbox" name="instagram">Instagram
-                    </label>
+                <label>Onde você possui conta:
+                    <div>
+                        <label class="input-inline"> <input type="checkbox" name="instagram">Instagram
+                        </label>
 
-                    <label>
-                        <input type="checkbox" name="facebook">Facebook
-                    </label>
+                        <label class="input-inline">
+                            <input type="checkbox" name="facebook">Facebook
+                        </label>
 
-                    <label>
-                        <input type="checkbox" name="youtube">Youtube
-                    </label>
+                        <label class="input-inline">
+                            <input type="checkbox" name="youtube">Youtube
+                        </label>
+                    </div>
                 </label>
-                <br><br>
 
-                <label>Sexo<br>
-                    <label>
-                        <input type="radio" name="genero" value="masculino">Masculino
-                    </label>
 
-                    <label>
-                        <input type="radio" name="genero" value="feminino">Feminino
-                    </label>
+                <label>Sexo
+                    <div>
+                        <label class="input-inline">
+                            <input type="radio" name="genero" value="masculino">Masculino
+                        </label>
+
+                        <label class="input-inline">
+                            <input type="radio" name="genero" value="feminino">Feminino
+                        </label>
+                    </div>
                 </label>
-                <br><br>
+
 
                 <label>Cor dos Olhos
                     <input type="color" name="cor-dos-olhos">
                 </label>
             </div>
-            <br>
+
 
             <div>
-                <label>Biografia<br>
+                <label>Biografia
                     <textarea name="bio"></textarea>
                 </label>
             </div>
-            <br>
+
 
             <div>
-                <label>Foto do perfil<br>
-                    <input type="file" name="arquivo" accept="image/*">
-                </label><br><br>
+                <label>Foto do perfil
+                    <input class="input-block" type="file" name="arquivo" accept="image/*">
+                </label>
 
-                <label>Telefone<br>
-                    <input type="tel" name="telefone" inputmode="numeric">
-                </label><br><br>
+                <label>Telefone
+                    <input class="input-block" type="tel" name="telefone" inputmode="numeric">
+                </label>
 
-                <label>Link do Perfil do Facebook<br>
-                    <input type="url" name="url">
-                </label><br><br>
+                <label>Link do Perfil do Facebook
+                    <input class="input-block" type="url" name="url">
+                </label>
 
-                <label>Senha<br>
-                    <input type="password" name="senha" min="6" max="8" required>
-                </label><br><br>
+                <label>Senha
+                    <input class="input-block" type="password" name="senha" min="6" max="8" required>
+                </label>
             </div>
-            <br>
+
 
             <div>
                 <button type="reset" name="reset">Limpar</button>
@@ -105,7 +114,7 @@
 
         </form>
 
-    </fieldset>
+    </div>
 
 </body>
 
