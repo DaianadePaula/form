@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <form action="" method="post">
+        <fieldset>
+
+            <legend>Cadastro</legend>
+
+            <div>
+                <label>Nome:<br>
+                    <input type="text" name="nome">
+                </label>
+                <br><br>
+
+                <label>Email:<br>
+                    <input type="email" name="email">
+                </label>
+                <br><br>
+
+                <label>Idade:<br>
+                    <input type="number" style="font-size: 13px; height: auto; width: 50px;" name="idade" min="12">
+                </label>
+                <br><br>
+
+                <label>Data de Nascimento:<br>
+                    <input type="date" name="data-de-nascimento">
+                </label>
+            </div>
+            <br>
+
+            <div>
+                <label>Onde você possui conta:<br>
+                    <label>
+                        <input type="checkbox" name="instagram">Instagram
+                    </label>
+    
+                    <label>
+                        <input type="checkbox" name="facebook">Facebook
+                    </label>
+    
+                    <label>
+                        <input type="checkbox" name="youtube">Youtube
+                    </label>
+                </label>
+                <br><br>
+    
+                <label>Sexo<br>
+                    <label>
+                        <input type="radio" name="genero">Masculino
+                    </label>
+    
+                    <label>
+                        <input type="radio" name="genero">Feminino
+                    </label>
+                </label>
+                <br><br>
+
+                <label>Cor dos Olhos
+                    <input type="color" name="olhos">
+                </label>
+            </div>
+            <br>
+
+            <div>
+                <label>Biografia<br>
+                    <textarea rows="5" cols="30"></textarea>
+                </label>
+            </div>
+            <br>
+
+            <div>
+                <label>Foto do perfil<br>
+                    <input type="file" name="arquivo" accept="image/*">
+                </label><br><br>
+
+                <label>Telefone<br>
+                    <input type="number" name="telefone" inputmode="numeric">
+                </label><br><br>
+
+                <label>Link do Perfil do Facebook<br>
+                    <input type="url" name="url">
+                </label><br><br>
+
+                <label>Senha<br>
+                    <input type="password" min="6" max="8">
+                </label><br><br>
+            </div>
+            <br>
+
+            <div>
+                <button type="reset" name="limpar">Limpar</button>
+                <button type="submit" name="enviar-dados">Enviar Dados</button>
+            </div>
+
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
