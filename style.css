@@ -6,8 +6,23 @@
     background-color: #BE9CFA;
 }
 
+.field {
+    border: 1px solid  #7C238C;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #BE9CFA;
+}
+
+.title-register {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 300;
+    top: 2px;
+    background-color: #BE9CFA;
+    padding: 0 3px;
+}
+
 body {
-    border-style: double;
     border-color: #7C238C;
     color: #42033D;
     margin-left: 5px;
@@ -18,13 +33,14 @@ label {
     display: block;
     padding: 2px;
     margin: 5px 2px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 input, textarea {
     margin-bottom: 10px;
     border: 2px solid #7C238C;
     box-shadow: 2px 2px 2px #7C72A0;
+    outline: none;
 }
 
 input[type="file"] {
@@ -48,12 +64,13 @@ textarea {
 
 
 button {
-    width: 135px;
+    width: 120px;
+    height: 50px;
     font-size: 15px;
     background: #680E4B;
     color: white;
     border: 5px;
-    border-color: white;
+    border: 2px solid white;
     padding: 12px 10px;
     box-shadow: 2px 2px 2px rgba (0,0,0,0.2);
     text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
@@ -63,9 +80,11 @@ button {
 
 button:hover {
     width: 145px;
+    height: 65px;
     background: #7C72A0;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     color: #42033D;
-    border-color: #42033D;
+    border: 2px solid #42033D;
+    font-size: 20px;
 }
 
